@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .container{ 
+            width: 500px;
+            height: 200px;
+            background-color: coral;
+            border: 2px solid black;
+            overflow-y: scroll; /* Try changing this to visible, scroll, and auto to see different behaviors */
+            /*hidden: gone I say, gone
+            scroll: always show scrollbars
+            auto: show scrollbars only when necessary 
+            visible: overflow is visible outside the box, default behavior
+            */
+        }
+
+        .horizontal-container {
+            font-size: 30px;
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Aperiam voluptatem natus quia ab. Ratione laboriosam architecto veritatis. Soluta tempora sit est veritatis dolorem voluptas. Distinctio cumque officia commodi. Asperiores autem nulla nobis vel voluptatem laborum.
+
+Ea voluptatem ad nihil. Qui laboriosam dolorem explicabo itaque deserunt rerum. Quis corrupti illum eligendi saepe officia quis iste quam.
+
+Accusantium in et sit qui non assumenda. Quia iste aliquam magnam optio occaecati. Voluptatum delectus pariatur necessitatibus suscipit eaque cupiditate. Laboriosam ipsa facere et sunt quia nulla.
+
+Quam dolorum aperiam veniam. Atque qui minus rerum neque eveniet et. Facilis possimus sint nihil asperiores. Ipsam ut quos magni. Et quibusdam ea ullam vel dolor sed. Qui laudantium et praesentium et harum rerum et mollitia.
+
+Maxime omnis voluptate quasi consequatur. Ipsam asperiores praesentium quae. Et voluptatem magnam qui est et voluptates.
+    </div>
+    <div class="horizontal-container">
+        Horizontal Container
+    </div>
+</body>
+</html>

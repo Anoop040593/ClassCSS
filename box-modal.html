@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Modal</title>
+    <style>
+        /* * -> Global Selector => Selects all elements*/
+        * { 
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+        }
+        .box-one {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*padding */
+            padding: 20px; /* Short hand for all four sides */
+            /* padding-top: 40px; Top padding */
+            /* padding: 20px 10px;  vertical horizontal top/bottom left/right */
+            /* padding: 20px 30px 10px; top right/left bottom */
+            padding: 20px 30px 10px 5px; /* top right bottom left */
+
+            /*margin */
+            margin: 20px; /* Short hand for all four sides */
+            /* margin-top: 40px; Top margin */
+            /* margin: 20px 10px;  vertical horizontal top/bottom left/right */
+            /* margin: 20px 30px 10px; top right/left bottom */
+            margin: 20px 30px 10px 5px; /* top right bottom left */
+
+            /* border */
+            border: 4px solid black; /* Short hand for all four sides border: thickness kind color */
+            /*border-top: 2px solid black;  Top border 
+            border-bottom: 3px solid blue;  Bottom border 
+            border-left: 4px solid purple;  Left border 
+            border-right: 5px solid orange;  Right border */ 
+            border-radius: 8px; /* rounded corners */
+           border-top-right-radius: 4px;  /* top right corner */
+            border-bottom-left-radius: 4px;  /* bottom left corner */
+            border-bottom-right-radius: 4px;  /* bottom right corner */
+            border-top-left-radius: 4px;  /* top left corner */
+        }   
+
+        .box-two {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .box-three {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-one">One</div>
+    <div class="box-two">Two</div>
+    <div class="box-three">Three</div>
+</body>
+</html>

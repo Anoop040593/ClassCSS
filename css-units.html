@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+      .pixel-example{ 
+        font-size: 36px;
+      }  
+      .container{
+        width: 50%;
+        font-size:40px;
+        border: 2px solid coral;
+      }  
+      .percent-example {
+        width: 50%; /* 50% of parent container's width; always relative to parent;
+         useful for responsive design*/
+        font-size: 80%;
+      }  
+      .viewport-example {
+        width: 50vw; /* 50% of viewport width */
+        height: 50vh; /* 50% of viewport height */
+        background-color: coral;
+      }
+
+      .rem-example {
+        font-size: .5rem; /* relative to root element (html) font size; 
+        1 rem = font size of root element, by default 16px */
+      }
+    </style>
+</head>
+<body>
+    <div class="pixel-example">Pixel Example</div>
+    <div class="container">
+        <div class="percent-example">Percent Example</div>
+    </div>
+    <div class="rem-example">REM Example</div>
+    <div class="viewport-example">Viewport Example</div>
+</body>
+</html>
