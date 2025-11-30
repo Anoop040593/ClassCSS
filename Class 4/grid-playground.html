@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Systems- Playground</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid #333;
+        height: 600px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; /*Creates 3 rows each taking equal fraction of available height*/
+        gap: 10px 20px; /*gap between both rows and columns*/
+    }
+    .item {
+        padding: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", 
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        border: 1px solid #333;
+        background-color: lightblue;
+    }
+
+   
+    .item-1 {
+        background-color: lightgoldenrodyellow;
+        grid-row: 1/ 3; /*spans from row line 1 to row line 3 (covers 2 rows)*/
+        grid-column: 1/2; /*spans from column line 1 to column line 2 (covers 1 column)*/;
+    }
+
+    .item-2 {
+        background-color: lightcoral;
+        grid-row: 2/3; /*spans from row line 2 to row line 4 (covers 2 rows)*/
+        grid-column: 2/4;
+    }
+
+    .item-3 {
+        background-color: lightgreen;
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    
+</style>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        
+    </div>
+</body>
+</html>
