@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+</head>
+<style>
+    ul#summer-drinks li {
+        color: blue;
+    }
+    ul#summer-drinks li.favorite {
+        color: green;
+    }
+    .favorite {
+        color: red;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <ul id="summer-drinks">
+        <li class="drink favorite">Lemonade</li>
+        <li class="drink">Iced Tea</li>
+        <li class="drink">Soda</li>
+    </ul>
+</body>
+</html>
